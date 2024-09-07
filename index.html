@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Eddie Tosetto</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Eddie Tosetto</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+      </div>
+      <div class="menu-links">  
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </nav>
+    <section id="profile"><div class="section__pic-container"><img src="./assets/immagine_cv.jpg" alt="Eddie Tosetto profile picture"></div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Eddie Tosetto</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/CV_EDDIE_TOSETTO-1.pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/eddie-tosetto-29b2b2196'">
+            <img src="./assets/github.png" alt="My linkedin profile" class="icon" onclick="location.href='https://github.com/ScatolaScatola'">
+        </div>
+    </div>
+</section>
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+<div class="section-container">
+  <div class="section__pic-container">
+    <img 
+    src="/assets/Frotend Image.webp" 
+    alt="Profile Picture" 
+    class="about-pic"
+    />
+  </div>
+  <div class="about-details-container">
+    <div class="about-containers">
+    <div class="details-container">
+      <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
+      <h3>Experience</h3>
+      <p>In training <br>Frontend Development</p>
+    </div>
+    <div class="details-container">  
+       <img 
+       src="./assets/education.png" 
+       alt="Education Icon" 
+       class="icon"/>
+      <h3>Education</h3>
+      <p>Bachelor Degree in Viticuture and Oenology<br>H.S. Diploma: Agriculture engineer</p>
+    </div>
+    </div>
+    <div class="text-container">
+      <p>I am a web developer with a strong passion for creating innovative and interactive digital experiences. My skills include HTML, CSS, and JavaScript, which I use to turn creative ideas into visual realities. I have a beginner-to-intermediate level of proficiency in React, allowing me to build dynamic and responsive user interfaces while continuing to enhance my expertise. I use Git to manage code versioning and collaborate effectively in teams. I am always looking for new challenges and opportunities to grow in the world of web development.</p>
+    </div>
+  </div>
+</div>
+<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+</section>
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+            <div>
+              <h3>HTML</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+            <div>
+              <h3>CSS</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+            <div>
+              <h3>JavaScript</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+            <div>
+              <h3>React</h3>
+              <p>Beginner-Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+            <div>
+              <h3>Web Design</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+<img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+</section>
+<section id="projects">
+<p class="section__text__p1">Browse My Recent</p>
+<h1 class="title">Projects</h1>
+<div class="experience-details-container">
+  <div class="about-containers">
+  <div class="details-container color-container">
+<div class="article-container">
+  <img 
+  src="./assets/bankist.png" 
+  alt="Project 1" 
+  class="project-img"
+  />
+  <h2 class="experience-sub-title project-title">Bankist App</h2>
+  <div class="btn-container">
+    <button 
+    class="btn btn-color-2 project-btn" 
+    onclick="location.href='https://github.com/ScatolaScatola/Bankist-Project'">
+      GitHub
+    </button>
+    
+  </div>
+</div>
+<div class="article-container">
+  <img 
+  src="./assets/mapty.png" 
+  alt="Project Two" 
+  class="project-img"
+  />
+  <h2 class="experience-sub-title project-title">Mapty</h2>
+  <div class="btn-container">
+    <button 
+    class="btn btn-color-2 project-btn" 
+    onclick="location.href='https://github.com/ScatolaScatola/WorkoutMap-Project'">
+      GitHub
+    </button>
+    
+  </div>
+</div>
+<div class="article-container">
+  <img 
+  src="./assets/forkify.png" 
+  alt="Project Three" 
+  class="project-img"
+  />
+  <h2 class="experience-sub-title project-title">Forkify</h2>
+  <div class="btn-container">
+    <button 
+    class="btn btn-color-2 project-btn" 
+    onclick="location.href='https://forkify-v2.netlify.app/'">
+      Live Demo
+    </button>
+    
+  </div>
+</div>
+  </div>
+</div>
+</div>
+<img src="./assets/arrow.png" alt="arrow icon" class="icon arrow-project" onclick="location.href='./#contact'"/>
+</section>
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+<div class="contact-info-upper-container">
+  <div class="contact-info-container">
+     <img src="./assets/email.png" 
+     alt="email icon" 
+     class="icon contact-icon email-icon"
+     />
+     <p> <a href="mailto:eddie.tosetto96@gmail.com">eddie.tosetto96@gmail.com</a>
+    </p>
+  </div>
+  <div class="contact-info-container">
+    <img src="./assets/linkedin.png" 
+    alt="linkedin icon" 
+    class="icon contact-icon"
+    />
+    <p> <a href="https://www.linkedin.com/in/eddie-tosetto-29b2b2196">LinkedIn</a>
+   </p>
+ </div>
+</div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Eddie Tosetto. All Rights Reserved</p>
+</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
